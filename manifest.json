@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Localify",
+    "version": "1.0",
+
+    "description": "Visit Mastodon links in your own server",
+    "icons": {
+        "48": "icons/localify-48.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["localify.js"]
+        }
+    ],
+    "browser_specific_settings": {
+        "gecko": {"id": "localify@sahill.us",
+                  "strict_min_version": "42.0"}
+    },
+    "options_ui": {
+        "page": "options.html",
+        "browser_style": false
+    }
+}

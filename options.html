@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <style>
+    label {margin-right:5px;}
+    #server.dirty {color: red;}
+    ul {list-style-type: none;}
+    li {margin: 5px;}
+    .on+span {visibility:hidden;}
+    .on:checked+span {visibility:visible;}
+  </style>
+  <body>
+    <p>This addon converts links to account profiles on Mastodon servers so that they point to the corresponding page on your home server.  This will make it easier to follow people, like their posts, etc.</p>
+    <form>
+      <ul>
+        <li>
+          <label for="server">Home Mastodon server</label>
+          <input type="text" id="server" name="server">
+        </li>
+        <li id="converted">
+          <input type="checkbox" class="on">
+          Change color of converted links
+          <span>to <input type="color" class="color"></span>
+        </li>
+        <li id="home">
+          <input type="checkbox" class="on">
+          Change color of links to my server
+          <span>to <input type="color" class="color"></span>
+        </li>
+        </ul>
+    </form>
+      <div id="duh"></div>
+    <script src="options.js"></script>
+  </body>
+</html>
