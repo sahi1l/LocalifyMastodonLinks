@@ -6,6 +6,10 @@ This will make it easier to follow people, like their posts, etc.  It can
 color those converted links if you like, and also color links to those
 accounts on your home server.
 
+You can use the Preferences panel to set your home server (it defaults
+to my own, tech.lgbt), whether it colors converted and home links, and
+what colors to use.
+
 The addon is unsigned as of present; to install it, you need to visit
 `about:debugging#/runtime/this-firefox` and use "Load Temporary
 Add-on...".
